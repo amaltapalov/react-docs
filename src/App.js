@@ -5,6 +5,9 @@ import ToggleButton from "./Components/ToggleButton";
 import Greeting from "./Components/Greeting";
 import LoginControl from "./Components/LoginControl";
 import Page from "./Components/Warning";
+import NumberList from "./Components/NumberList";
+
+const numbers = [1, 2, 3, 4, 5];
 
 function App() {
 	return (
@@ -20,6 +23,9 @@ function App() {
 			<LoginControl />
 			<hr />
 			<Page />
+			<hr />
+			<NumberList numbers={numbers} />
+			<hr />
 		</div>
 	);
 }
