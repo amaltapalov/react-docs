@@ -8,6 +8,7 @@ import Page from "./Components/Warning";
 import NumberList from "./Components/NumberList";
 import NameForm from "./Components/NameForm";
 import Reservation from "./Components/Reservation";
+import TempCalculator from "./Components/TempCalculator";
 
 // constant for NumberList component
 const numbers = [1, 2, 3, 4, 5];
@@ -32,6 +33,10 @@ function App() {
 			<NameForm />
 			<hr />
 			<Reservation />
+			<br />
+			<br />
+			<hr />
+			<TempCalculator />
 		</div>
 	);
 }
