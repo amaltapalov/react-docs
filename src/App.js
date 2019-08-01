@@ -7,6 +7,7 @@ import LoginControl from "./Components/LoginControl";
 import Page from "./Components/Warning";
 import NumberList from "./Components/NumberList";
 import NameForm from "./Components/NameForm";
+import Reservation from "./Components/Reservation";
 
 // constant for NumberList component
 const numbers = [1, 2, 3, 4, 5];
@@ -29,6 +30,8 @@ function App() {
 			<NumberList numbers={numbers} />
 			<hr />
 			<NameForm />
+			<hr />
+			<Reservation />
 		</div>
 	);
 }
