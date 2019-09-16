@@ -1,10 +1,12 @@
 import React from "react";
 import Author from "./Components/Author";
 import Clock from "./Components/Clock";
-import ToggleButton from "./Components/ToggleButton";
+import ToggleButtonHook from "./Components/ToggleButtonHook";
 import Greeting from "./Components/Greeting";
 import LoginControl from "./Components/LoginControl";
-import Page from "./Components/Warning";
+import LoginControlHook from "./Components/LoginControlHook";
+import ShowWarning from "./Components/ShowWarning";
+import ShowWarningHook from "./Components/ShowWarningHook";
 import NumberList from "./Components/NumberList";
 import NameForm from "./Components/NameForm";
 import Reservation from "./Components/Reservation";
@@ -20,13 +22,17 @@ function App() {
 			<hr />
 			<Clock />
 			<hr />
-			<ToggleButton />
+			<ToggleButtonHook />
 			<hr />
 			<Greeting isLoggedIn={true} />
 			<hr />
 			<LoginControl />
 			<hr />
-			<Page />
+			<LoginControlHook />
+			<hr />
+			<ShowWarning />
+			<hr />
+			<ShowWarningHook />
 			<hr />
 			<NumberList numbers={numbers} />
 			<hr />

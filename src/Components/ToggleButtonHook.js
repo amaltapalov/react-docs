@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ToggleButton() {
+export default function ToggleButtonHook() {
 	const [toggle, setToggle] = useState(true);
 
 	return (

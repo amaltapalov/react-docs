@@ -12,7 +12,7 @@ function Warning(props) {
 	);
 }
 
-class Page extends React.Component {
+class ShowWarning extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -39,4 +39,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page;
+export default ShowWarning;
