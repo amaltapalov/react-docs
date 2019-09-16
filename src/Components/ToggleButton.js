@@ -1,30 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-class ToggleButton extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			isToggleOn: true
-		};
-		this.handleClick = this.handleClick.bind(this);
-	}
+export default function ToggleButton() {
+	const [toggle, setToggle] = useState(true);
 
-	handleClick() {
-		this.setState({
-			isToggleOn: !this.state.isToggleOn
-		});
-	}
-
-	render() {
-		return (
-			<button
-				onClick={this.handleClick}
-				style={{ width: 200, margin: "20px 0" }}
-			>
-				{this.state.isToggleOn ? "ON" : "OFF"}
-			</button>
-		);
-	}
+	return (
+		<button
+			style={{ width: 200, margin: "20px 0" }}
+			onClick={() => setToggle(!toggle)}
+		>
+			{toggle ? "ON" : "OFF"}
+		</button>
+	);
 }
-
-export default ToggleButton;
